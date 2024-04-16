@@ -1,7 +1,7 @@
 *{margin: 0; 
 padding: 0;}
 body{width: 100%;
-    background-color: rgb(214, 214, 199);
+    background-color: rgb(255, 255, 255);
     font-family: "Lora", serif; 
 height: 2000px;} 
 .lora-uniquifier {
@@ -10,9 +10,9 @@ height: 2000px;}
   font-weight: weight;
   font-style: normal;
 }
-    h1 {background-color: rgb(190, 211, 211); border: 3px rgb(122, 122, 160) solid;}
-    h2 { color: rgb(65, 63, 62);
-    background-color: rgb(176, 180, 184);}
+    h1 {background-color: rgb(255, 255, 255); text-align: center;}
+    h2 { color: rgb(28, 26, 25);
+    background-color: rgb(255, 255, 255);}
     .box{font-size: 16px;}
     .ortala{
         text-align: center;}
@@ -25,3 +25,17 @@ justify-content: flex-end;}
     .login{margin-left: 20px;}
     .menu{ display: flex;
     justify-content: space-between;}
+.flex-container{ 
+display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 100px;
+}
+.flex_item{
+    flex: 0 1 auto; align-self: center; order: 2;
+}
+.menu-container{ color: rgb(13, 13, 13); background-color: rgb(142, 140, 138); padding: 20px;}
+.header-container{ color: aquamarine; display: flex; justify-content: center;
+}
+.header{ width: 900px; height: 150px; display: flex; justify-content: space-between; align-items: center;}
+.photo-grid-container{ display: flex; justify-content: center;}
+.photo-grid{ width: 1200px; display: flex; justify-content: center; flex-wrap: wrap;}
+.photo-grid-item{ border: 1px solid #fff; width: 300px; height: 300px;
+}
