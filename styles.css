@@ -15,9 +15,9 @@ height: 2000px;}
     background-color: rgb(255, 255, 255);}
     .box{font-size: 16px;}
     .ortala{
-        text-align: center;}
+        text-align: center; height: 50px;}
     .baslık{font-size: 50px;
-    position: fixed;}
+    position: fixed; height: 50px;}
     .eighty{width: 20%;}
     .links{border: 1px solid forestgreen;
     display: flex;
@@ -31,11 +31,18 @@ display: flex; flex-direction: row; justify-content: space-between; align-items:
 .flex_item{
     flex: 0 1 auto; align-self: center; order: 2;
 }
-.menu-container{ color: rgb(13, 13, 13); background-color: rgb(142, 140, 138); padding: 20px;}
+.menu-container{ color: rgb(13, 13, 13); background-color: rgb(255, 255, 255); padding: 20px;}
 .header-container{ color: aquamarine; display: flex; justify-content: center;
 }
-.header{ width: 900px; height: 150px; display: flex; justify-content: space-between; align-items: center;}
+.header{ width: 900px; height: 50px; display: flex; justify-content: space-between; align-items: center;}
 .photo-grid-container{ display: flex; justify-content: center;}
-.photo-grid{ width: 1200px; display: flex; justify-content: center; flex-wrap: wrap;}
-.photo-grid-item{ border: 1px solid #fff; width: 300px; height: 300px;
+.photo-grid{ width: 2500px; height: 600px; display: flex; justify-content: center; flex-wrap: wrap;}
+.photo-grid-item{ width: 500px; height: 500px; border: 1px solid black;
 }
+.logo{scale: 50%;}
+.social{ scale: 80%; 
+}
+.baslıklar2{ display: flex; flex-direction: column;height: 60px;}
+.baslıklar3 {display: flex; flex-direction: column; height: 60px; }
+.mp2{ width: 500px; height: 500px;display: flex; flex-direction: column;  scale: 90%;}
+.revit{ width: 500px; height: 500px; display: flex; flex-direction: column; scale: 100%;}
