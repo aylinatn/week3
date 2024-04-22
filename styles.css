@@ -49,3 +49,4 @@ display: flex; flex-direction: row; justify-content: space-between; align-items:
 .eskiz{ width: 500px; height: 500px;display: flex; flex-direction: column;}
 .iletişim{ width: 100%; height: 50px; background-color: rgb(123, 123, 123);}
 .mail{width: 100%; height: 100px; background-color: rgb(123, 123, 123);}
+.son{ text-align: center;}
