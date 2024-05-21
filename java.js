@@ -62,3 +62,27 @@ if(scale>= 1/200) {
 } else {
     console.log('Lineweight: 0.05');
 }
+let aa = document.getElementById('aylin');
+let bb= document.getElementsByClassName('ortala');
+let cc= document.getElementsByTagName('div');
+console.log(aa)
+console.log(bb)
+console.log(cc)
+aa.innerHTML= 'ABOUT'
+
+function  bbb(){
+    let myImage = document.getElementById('myImage');
+    let newImageSource = 'eskizler.png';
+    myImage.setAttribute('src', newImageSource);
+    myImage.setAttribute('alt', 'hnh');
+}
+function addItalic(){
+    let myParagraph= document.getElementById('aylin');
+    myParagraph.classList.add('Italic');
+}
+function createNewDiv(){
+    let newDiv= document.createElement('div');
+    newDiv.classList.add('newDiv');
+    newDiv.textContent= 'This is a dynamically created div!';
+    document.body.appendChild(newDiv);
+}

@@ -55,3 +55,7 @@ display: flex; flex-direction: row; justify-content: space-between; align-items:
 .padding-all-5{
     padding: 0 5%;
 }
+.Italic{ font-style: italic;}
+.newDiv{
+    background-color: lightblue; padding: 10px; 
+}
