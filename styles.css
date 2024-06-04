@@ -1,61 +1,161 @@
 *{margin: 0; 
-padding: 0;}
+
+padding: 0;
+scrollbar-color: #E6007E darkgreen;
+scrollbar-width: thin;
+
+}
+
 body{width: 100%;
     background-color: rgb(255, 255, 255);
     font-family: "Lora", serif; 
 } 
-.lora-uniquifier {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+
+a{
+    text-decoration: none;
+
 }
-    h1 {background-color: rgb(255, 255, 255); text-align: center;}
-    h2 { color: rgb(28, 26, 25);
-    background-color: rgb(255, 255, 255);}
-    .box{font-size: 16px;}
-    .ortala{
-        text-align: center; height: 50px;}
-    .baslık{font-size: 50px;
-    position: fixed; height: 50px;}
-    .eighty{width: 20%;}
-    .links{border: 1px solid forestgreen;
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    text-shadow: 5px 5px pink;
+}
+a h1:hover{
+    background-color: pink;
+}
+
+::selection {
+    background: lightgreen;
+  }
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+.center{
+    text-align:center;
+}
+
+.flex{
     display: flex;
-justify-content: flex-end;}
-    .login{margin-left: 20px;}
-    .menu{ display: flex;
-    justify-content: space-between;}
-.flex-container{ 
-display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 100px;
 }
-.flex_item{
-    flex: 0 1 auto; align-self: center; order: 2;
-}
-.menu-container{ color: rgb(13, 13, 13); background-color: rgb(255, 255, 255); padding: 20px;}
-.header-container{ color: aquamarine; display: flex; justify-content: center;
-}
-.header{ width: 100%; height: 100px;  display: flex; justify-content: space-between;}
-.photo-grid-container{ display: flex; justify-content: center;}
-.photo-grid{ width: 2500px; height: 600px; display: flex; justify-content: center; flex-wrap: wrap;}
-.photo-grid-item{ width: 500px; height: auto; border: 1px solid black;
-}
-.logo{scale: 50%;}
 
-.baslıklar2{ display: flex; flex-direction: column;height: 60px;}
-.baslıklar3 {display: flex; flex-direction: column; height: 60px; }
-.mp2{ width: 500px; height: auto;display: flex; flex-direction: column;  scale: 90%;}
-.revit{ width: 500px; height: 500px; display: flex; flex-direction: column; scale: 100%;}
-.eskiz{ width: 500px; height: 500px;display: flex; flex-direction: column;}
-.iletişim{ width: 100%; height: 50px; background-color: rgb(123, 123, 123);}
-.mail{width: 100%; height: 100px; background-color: rgb(123, 123, 123);}
-.son{ text-align: center;}
+.wrap-flex{
+    flex-wrap: wrap;
+}
 
-.flex{display: flex;}
-.column-flex{ flex-direction: column;}
-.padding-all-5{
+.word-wrap{
+    word-wrap: break-word;
+}
+
+.max-width-100{
+    max-width: 100%;
+}
+
+.max-width-80{
+    max-width: 80%;
+}
+
+.image-child{
+    max-width: 30%;
+}
+
+.padding-5{
     padding: 0 5%;
 }
-.Italic{ font-style: italic;}
-.newDiv{
-    background-color: lightblue; padding: 10px; 
+
+.padding-10{
+    padding: 0 10%;
 }
+.gap{
+    gap: 2%;
+}
+
+.yataydaortala{
+    justify-content: center;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+  .page-wrapper{
+    margin: 2% 0;
+  }
