@@ -1,88 +1,61 @@
 
-let fruits = ['Apple', 'Banana','Orange', 'Mango'];
-console.log(fruits[0]); 
-fruits.push('Grapes');
-console.log(fruits)
-fruits.splice(1,1)
-console.log(fruits)
-let person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age:30,
-    hobbies: ['Reading', 'Travelling'],
-    address: {
-        street: '123 Main St.',
-        city: 'Anytown',
-        country: 'USA'
-    }
-}
-console.log(person)
-console.log(person.firstName);
-console.log(person.address.city);
-person.age = 31;
-person.hobbies.push('Cooking');
-console.log(person)
-for(let i =0; i<5; i++){
-    console.log(i);
-}
-for (let i=0; i<fruits.length; i++) {
-    console.log(fruits[i]);
-}
-for (let age in person) {
-    console.log(age + ':' + person[age]);
-}
-let x =10;
-if(x>5) {
-    console.log('hello')
-} else{ console.log('bye')
-}
-let temperature = 25;
-if(temperature> 20) {
-    console.log('Its a warm day!'); 
-}
-let hour =18;
-if(hour <12) {
-    console.log('Good Morning!');
-} else {
-    console.log('Good Afternoon!');
-}
-let age = 25;
-if(age>=18) {
-    if (age<21){
-        console.log('You are an adult but not yet allowed to drink');
-    } else {
-        console.log('You are an adult and allowed to drink');
-    } 
-} else {
-    console.log('You are minor');
-}
-let scale = 1/200;
-if(scale>= 1/200) {
-    console.log('Lineweight= 0.2');
-} else {
-    console.log('Lineweight: 0.05');
-}
-let aa = document.getElementById('aylin');
-let bb= document.getElementsByClassName('ortala');
-let cc= document.getElementsByTagName('div');
-console.log(aa)
-console.log(bb)
-console.log(cc)
-aa.innerHTML= 'ABOUT'
+function myFunction() {
+    var element = document.getElementById("myDIV");
+    element.classList.toggle("mystyle");
+  }
 
-function  bbb(){
-    let myImage = document.getElementById('myImage');
-    let newImageSource = 'eskizler.png';
-    myImage.setAttribute('src', newImageSource);
-    myImage.setAttribute('alt', 'hnh');
+  function showNotification() {
+    alert("Don't Touch Me Pls");
 }
-function addItalic(){
-    let myParagraph= document.getElementById('aylin');
-    myParagraph.classList.add('Italic');
-}
-function createNewDiv(){
-    let newDiv= document.createElement('div');
-    newDiv.classList.add('newDiv');
-    newDiv.textContent= 'This is a dynamically created div!';
-    document.body.appendChild(newDiv);
-}
+
+var images = [
+  'MP3-1.png',
+  'MP3-2.png',
+  'MP3-3.png',
+  'MP3-4.jpg',
+  'MP3-5.jpg',
+];
+
+var currentIndex = 0; 
+
+
+var sliderLink = document.getElementById('slider-link');
+var sliderContainer = document.getElementById('slider');
+var sliderImage = document.getElementById('slider-image');
+var leftArrow = document.getElementById('left-arrow');
+var rightArrow = document.getElementById('right-arrow');
+
+// JavaScript ile tıklama olayını yönetiyoruz
+sliderLink.addEventListener('click', function() {
+  // Slaytı göster
+  sliderContainer.style.display = 'block';
+});
+
+// Slaytı kapatmak için tıklama olayını dinle
+sliderContainer.addEventListener('click', function() {
+  sliderContainer.style.display = 'none';
+});
+
+// Sol ok tıklama olayı
+leftArrow.addEventListener('click', function(event) {
+  event.stopPropagation(); // Ana div'e tıklama olayının yayılmasını engeller
+
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1; // Dizinin başına dön
+  }
+  sliderImage.src = images[currentIndex];
+});
+
+// Sağ ok tıklama olayı
+rightArrow.addEventListener('click', function(event) {
+  event.stopPropagation(); // Ana div'e tıklama olayının yayılmasını engeller
+
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0; // Dizinin sonuna gelindiğinde başa dön
+  }
+  sliderImage.src = images[currentIndex];
+});
+
+

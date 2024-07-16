@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Aylin Atan Portfolyo">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYLİN ATAN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="page-wrapper">
+       <h1 id="header" class="center roboto-thin padding-30"> <a href="index.html" >AYLİN ATAN</a></h1>
+<div class="center roboto-light text-shadow ">
+<h2>P R O J E C T S</h2> </div>
+
+<div class="padding-40 roboto-thin  text-align-center">
+
+<p  class="hover-effect" id="DS2" >  Architectural Design Studio 2</p> 
+
+<br>
+ <p  class="hover-effect" id="slider-link" > Architectural Design Studio 3</p>
+
+ <div class="slider-container" id="slider">
+    <div class="slider-content">
+      
+      <img id="slider-image" src="MP3-1.png" alt="Architectural Design Studio 3 Image">
+    </div>
+    
+    <div class="slider-arrow left" id="left-arrow">&#10094;</div>
+    <div class="slider-arrow right" id="right-arrow">&#10095;</div>
+  </div>
+
+<br>
+<p  class="hover-effect"  >Architectural Application Project</p>
+</div>
+
+<br>
+
+<div class="glitter-text" style="font-size: small;"><p>New projects coming soon...</p></div>
+</div>
+
+     <div class="padding-10" style=" position: relative; padding-top: 10%;"><div class="flex gap yataydaortala" >
+        <div class="flex roboto-thin c"><a  href="https://www.linkedin.com/in/aylin-atan-16bb16271/"> Linkedin </a> </div>
+            <div class=" roboto-thin flex c"><a href="https://www.instagram.com/aylinatn?igsh=NWN5dnhtYml4ZGVx&utm_source=qr">Instagram  </a>   </div>
+           
+        <div class="flex column-flex c">
+        <div style="position: relative; top: 0; left: 0; overflow: visible;">
+        <div style="position: absolute;">
+            <button class="contact-button  yataydaortala gap flex "   onclick="myFunction()">Contact</button>
+                <div id="myDIV" class="contact-bar">
+                    <div class=" playfair-display-uniquifier " >
+                    <p> 20211301097@ogr.msgsu.edu.tr</p>
+                     <p> aylinatan2000@outlook.com </p>
+                     <p>Phone: +90 541 814 1264</p>
+                   </div> </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+ <script src="java.js"></script>
+</body>
+</html>
+
+
+
+
+var images = [
+  'MP3-1.png',
+  'MP3-2.png',
+  'MP3-3.png',
+  'MP3-4.jpg',
+  'MP3-5.jpg',
+];
+
+var currentIndex = 0; 
+
+var sliderLink = document.getElementById('slider-link');
+var sliderContainer = document.getElementById('slider');
+var sliderImage = document.getElementById('slider-image');
+var leftArrow = document.getElementById('left-arrow');
+var rightArrow = document.getElementById('right-arrow');
+
+
+sliderLink.addEventListener('click', function() {
+ 
+  sliderContainer.style.display = 'block';
+});
+
+
+sliderContainer.addEventListener('click', function() {
+  sliderContainer.style.display = 'none';
+});
+
+
+leftArrow.addEventListener('click', function(event) {
+  event.stopPropagation(); 
+
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1; 
+  }
+  sliderImage.src = images[currentIndex];
+});
+
+
+rightArrow.addEventListener('click', function(event) {
+  event.stopPropagation(); 
+
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0; 
+  }
+  sliderImage.src = images[currentIndex];
+});
+
+
+
+
+.slider-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+  
+  .slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .slider-content img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 10000;
+  }
+  
+  .slider-arrow.left {
+    left: 20px;
+  }
+  
+  .slider-arrow.right {
+    right: 20px;
+  }
